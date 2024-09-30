@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+.caveat-font {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+body{
+    margin: 0;
+    text-align: center;
+}
+.card{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 400px;
+    height: 400px;
+    perspective: 1000px;
+}
+  
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+  
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+  
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+  
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+  
+.flip-card-back {
+    color: black;
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back, img{
+    border-radius: 25px;
+    box-shadow: 0 0 20px gray;
+}
+
+h1{
+    margin: 0;
+    margin-top: 40px;
+    font-family: "Caveat";
+    font-size: 40px;
+}
+p{
+    font-size: 27px;
+    margin: 25px;
+    margin-top: 50px;
+    font-family: "Caveat";
+}
+
+h2{
+    margin: 10vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+    font-weight: 250;
+    color: #777;
+}
