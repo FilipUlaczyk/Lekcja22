@@ -58,7 +58,10 @@ body{
 
 .flip-card-front, .flip-card-back, img{
     border-radius: 25px;
-    box-shadow: 0 0 10px gray;
+    box-shadow: 
+        0 0 5px #999,
+        0 0 10px #999,
+        0 0 15px #999;
 }
 
 h1{
